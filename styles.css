@@ -1,0 +1,117 @@
+/* Global Styles */
+
+html, body {
+    height: 100%
+}
+body {
+    font-family:"papyrus" ;
+    background: url(https://images.unsplash.com/photo-1533407185345-6d959a892a72?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat; /* image only appears once on the page */
+    text-align: center;
+    margin: 0;
+    padding: 0; /* ensure the layout behaves the same way in all browsers. */
+}
+
+/* Title Screen */
+#title-screen {
+    display: flex;
+    flex-direction: column; /*This arranges the child elements (like buttons, text, etc.) vertically (one on top of the other).*/
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    color: white
+}
+
+#title-screen h1 {
+    font-size: 4em;
+    color: #040301;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#start-btn {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    margin-top: 10px;
+    background-color: #34325b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#start-btn:hover {
+    background-color: #662020;
+}
+
+/* Game Screen */
+#game-screen {
+    display: block;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Question and Answer Styles */
+#question-text {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button.answer {
+    font-size: 1.2em;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button.answer:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* Score Area */
+#score-area {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+/* End Screen */
+#end-screen {
+    display: none;
+    background-color: #ffebcd;
+    padding: 30px;
+}
+
+#end-screen h2 {
+    font-size: 1em;
+    color: #000000;
+}
+
+#restart-btn {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #34325b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#restart-btn:hover {
+    background-color: #662020;
+}

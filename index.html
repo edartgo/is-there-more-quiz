@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="styles.css">
+</head>
+<body>
+<!-- Title Screen -->
+    <div id="title-screen">
+        <h1>Is There More?</h1>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+</body>
+</html>
+
+<!-- Game Area -->
+
+<div id="game-screen" style="display: none;">
+    <div id="question-area">
+    <h2 id="question-text"></h2>
+    <div id="answer-buttons"></div>
+    
+</div>
+<div id="score-area">
+    <p>Score: <span id="score">0</span></p>
+</div>
+</div>
+
+<!-- End Screen -->
+<div id="end-screen" style="display: none;">
+    <h2>The life and resurrection of Jesus Christ, are seen by many as historical events that offer evidence of God’s intervention in human history. The transformation of early Christians and the rapid spread of Christianity, despite opposition, is often viewed as a testament to the power of the divine.</h2>
+    <p>Your final score: <span id="final-score">0</span></p>
+    <p id="encouragement-message"></p>
+    <button id="restart-btn">Restart</button>
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
